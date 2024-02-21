@@ -1,0 +1,118 @@
+.callback {
+    width: 100%;
+}
+
+.callback__button {
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: var(--white);
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    height: 20px;
+}
+
+.callback__img {
+    width: 20px;
+    height: 20px;
+}
+
+.callback__button--bottom {
+    padding: 30px;
+    background-color: var(--sky-blue);
+}
+
+@media (min-width: 768px) {
+    .callback {
+        width: 480px;
+        height: 80px;
+        position: relative;
+    }
+
+    .callback__button {
+        font-size: 20px;
+        width: 100%;
+        height: 100%;
+        padding: 25px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transform: translate(0);
+        position: static;
+        margin-left: -100px;
+        border: solid 1px rgba(244, 244, 247, 0.1);
+        border-left: transparent;
+        border-bottom: transparent;
+    }
+
+    .callback__icon {
+        position: absolute;
+        z-index: 5;
+        right: 50px;
+        bottom: 25px;
+    }
+
+    .callback__img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .callback--none {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .callback {
+        width: 580px;
+    }
+
+    .callback__button {
+        font-size: 20px;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -130px;
+        bottom: -1px;
+    }
+
+    .callback__text {
+        padding-left: 100px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .callback {
+        margin-left: -200px;
+    }
+
+    .callback__button {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        column-gap: 180px;
+        justify-content: stretch;
+        align-items: center;
+        margin-left: 0;
+        padding-left: 100px;
+    }
+
+    .callback--bottom {
+        margin-left: -100px;
+    }
+    .callback__button--bottom {
+        background-color: var(--sky-blue);
+    }
+}

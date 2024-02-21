@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="digital,develop,technology" />
+        <meta
+            name="description"
+            content="Разработка программного обеспечения для компаний"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="src/images/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="src/images/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="src/images/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="src/images/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="src/images/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="stylesheet" href="src/style/style.css" />
+        <link
+            href="src/fonts/roboto_light.woff2"
+            rel="preload"
+            as="font"
+            crossorigin
+        />
+        <link
+            href="src/fonts/roboto_black.woff2"
+            rel="preload"
+            as="font"
+            crossorigin
+        />
+        <title>Frontbyte</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <input
+                        type="checkbox"
+                        id="burger-checkbox"
+                        class="navigation__checkbox"
+                    />
+                    <label
+                        for="burger-checkbox"
+                        class="navigation__label"
+                    ></label>
+
+                    <picture class="logo">
+                        <source
+                            class="logo__alt"
+                            srcset="src/images/inhtml/icons/logo.svg"
+                            media="(min-width:768px)"
+                        />
+                        <img
+                            class="logo__major"
+                            src="src/images/inhtml/icons/logo+text.svg"
+                            alt="логотип компании frontbyte"
+                        />
+                    </picture>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#about">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#portfolio">Projects</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="javascript:void(0)"
+                                >Services</a
+                            >
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#our-team">Our team</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="javascript:void(0)"
+                                >Events</a
+                            >
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#footer">Contacts</a>
+                        </li>
+                    </ul>
+                    <ul class="language">
+                        <li class="language__item">
+                            <button class="language__button">No</button>
+                        </li>
+                        <li class="language__item">
+                            <button
+                                class="language__button language__button--active"
+                            >
+                                En
+                            </button>
+                        </li>
+                        <li class="language__item">
+                            <button class="language__button">Ru</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="headline">
+                <div class="container">
+                    <div class="wrapper headline__wrapper">
+                        <h1 class="title title--headline">
+                            We provide digital services and develop our own
+                            products in sports and iHealth industry
+                        </h1>
+                        <h3 class="description description--headline">
+                            We put technology and sport together to create the
+                            world's most efficient &nbsp. and popular sports
+                            apps.
+                        </h3>
+                        <div class="callback">
+                            <button class="callback__button">
+                                <p class="callback__text">Drop us a line</p>
+                                <span class="callback__icon">
+                                    <picture class="callback__picture">
+                                        <source
+                                            class="callback__img"
+                                            srcset="
+                                                src/images/inhtml/icons/arrow-right.svg
+                                            "
+                                            media="(min-width:1024px)"
+                                        />
+                                        <img
+                                            class="callback__img"
+                                            src="src/images/inhtml/icons/arrow-right-mini.svg"
+                                            alt=""
+                                        />
+                                    </picture>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="about__wrapper">
+                        <div class="about__text">
+                            <h2 class="title title--about">
+                                We combine high level of professionalism and
+                                individual approach
+                            </h2>
+                            <h3 class="description description--about">
+                                We have subject domain expertise in various
+                                aspects
+                            </h3>
+                        </div>
+                        <div class="features">
+                            <div class="features__list">
+                                <div class="features__image">
+                                    <img
+                                        class="features__img"
+                                        src="src/images/inhtml/icons/about-project.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <p class="features__text">
+                                    Project management for simple and complex
+                                    projects
+                                </p>
+                            </div>
+                            <div class="features__list">
+                                <div class="features__image">
+                                    <img
+                                        class="features__img"
+                                        src="src/images/inhtml/icons/about-hire.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <p class="features__text">
+                                    Management for hire
+                                </p>
+                            </div>
+                            <div class="features__list">
+                                <div class="features__image">
+                                    <img
+                                        class="features__img"
+                                        src="src/images/inhtml/icons/about-digital.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <p class="features__text">
+                                    Digital transformation
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__text about__text--what-we">
+                            <h2 class="title title--about title--big-marg">
+                                What We Do
+                            </h2>
+                        </div>
+                        <ul class="do-list">
+                            <li class="do-list__item">
+                                Development and support of new and existing
+                                software systems
+                            </li>
+                            <li class="do-list__item">
+                                Deep analytics in various spheres
+                            </li>
+                            <li class="do-list__item">
+                                Insights-driven solutions
+                            </li>
+                            <li class="do-list__item">
+                                Agile product engineering
+                            </li>
+                            <li class="do-list__item">
+                                Quality Assurance for new and existing products
+                            </li>
+                            <li class="do-list__item">
+                                Data collection, research and analysis
+                            </li>
+                            <li class="do-list__item">
+                                UX/UI concepts and design
+                            </li>
+                            <li class="do-list__item">
+                                Video and motion design
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="callback callback--bottom callback--none">
+                    <button class="callback__button callback__button--bottom">
+                        <p class="callback__text">Services</p>
+                        <span class="callback__icon">
+                            <picture class="callback__picture">
+                                <source
+                                    class="callback__img"
+                                    srcset="
+                                        src/images/inhtml/icons/arrow-right.svg
+                                    "
+                                    media="(min-width:1024px)"
+                                />
+                                <img
+                                    class="callback__img"
+                                    src="src/images/inhtml/icons/arrow-right-mini.svg"
+                                    alt=""
+                                />
+                            </picture>
+                        </span>
+                    </button>
+                </div>
+            </section>
+            <section class="portfolio" id="portfolio">
+                <div class="portfolio__wrapper">
+                    <div class="portfolio__text">
+                        <div class="container">
+                            <h2 class="title title--portfolio">Our Work</h2>
+                            <h3 class="description description--portfolio">
+                                We change the way businesses and industries
+                                operate.
+                            </h3>
+                        </div>
+                    </div>
+                    <a class="infoblock" href="javascript:void(0)">
+                        <div class="back-image back-image--big">
+                            <picture class="back-image__block">
+                                <source
+                                    class="back-image__picture back-image__picture--project"
+                                    srcset="
+                                        src/images/inhtml/vid-birdieeyes@2x.jpg
+                                    "
+                                    media="(min-width:768px)"
+                                />
+
+                                <img
+                                    class="back-image__picture back-image__picture--project"
+                                    src="src/images/inhtml/img-birdieeyes@3x.jpg"
+                                    alt=""
+                                />
+                            </picture>
+                        </div>
+                        <div class="text-data text-data--absolute">
+                            <p class="text-data__headline">BIRDIEEYES</p>
+                            <p class="text-data__specification">
+                                We have introduced AR technology into one of the
+                                most traditional games and made it even more
+                                interesting
+                            </p>
+                        </div>
+                    </a>
+                    <a class="infoblock" href="javascript:void(0)">
+                        <div class="back-image">
+                            <picture class="back-image__block">
+                                <source
+                                    class="back-image__picture back-image__picture--project"
+                                    srcset="
+                                        src/images/inhtml/img-upsport@big2x.jpg
+                                    "
+                                    media="(min-width:1024px)"
+                                />
+                                <img
+                                    class="back-image__picture back-image__picture--project"
+                                    src="src/images/inhtml/img-upsport@2x.jpg"
+                                    alt=""
+                                />
+                            </picture>
+                        </div>
+
+                        <div class="text-data">
+                            <p class="text-data__headline">UPSPORT</p>
+                            <p class="text-data__specification">
+                                Live communication platform that has changed the
+                                game for sport clubs, parents and their kids
+                            </p>
+                        </div>
+                    </a>
+                    <a class="infoblock" href="javascript:void(0)">
+                        <div class="back-image">
+                            <picture class="back-image__block">
+                                <source
+                                    class="back-image__picture back-image__picture--project"
+                                    srcset="
+                                        src/images/inhtml/img-xland@Big2x.jpg
+                                    "
+                                    media="(min-width:1024px)"
+                                />
+                                <img
+                                    class="back-image__picture back-image__picture--project"
+                                    src="src/images/inhtml/img-xland@2x.jpg"
+                                    alt=""
+                                />
+                            </picture>
+                        </div>
+                        <div class="text-data">
+                            <p class="text-data__headline">XLAND</p>
+                            <p class="text-data__specification">
+                                Digital presence for the first indoor activity
+                                park in Norway
+                            </p>
+                        </div>
+                    </a>
+                    <a class="infoblock" href="javascript:void(0)">
+                        <div class="back-image">
+                            <picture class="back-image__block">
+                                <source
+                                    class="back-image__picture back-image__picture--project"
+                                    srcset="
+                                        src/images/inhtml/img-phonero@big2x.jpg
+                                    "
+                                    media="(min-width:1024px)"
+                                />
+                                <img
+                                    class="back-image__picture back-image__picture--project"
+                                    src="src/images/inhtml/img-phonero@2x.jpg"
+                                    alt=""
+                                />
+                            </picture>
+                        </div>
+                        <div class="text-data">
+                            <p class="text-data__headline">PHONERO</p>
+                            <p class="text-data__specification">
+                                Interfaces for the cloud based switchboard
+                                applications as well as various desktop and
+                                mobile applications
+                            </p>
+                        </div>
+                    </a>
+                    <a class="infoblock" href="javascript:void(0)">
+                        <div class="back-image">
+                            <picture class="back-image__block">
+                                <source
+                                    class="back-image__picture back-image__picture--project"
+                                    srcset="
+                                        src/images/inhtml/img-kongsberg@big2x.jpg
+                                    "
+                                    media="(min-width:1024px)"
+                                />
+                                <img
+                                    class="back-image__picture back-image__picture--project"
+                                    src="src/images/inhtml/img-kongsberg@2x.jpg"
+                                    alt=""
+                                />
+                            </picture>
+                        </div>
+                        <div class="text-data">
+                            <p class="text-data__headline">KONGSBERG GROUP</p>
+                            <p class="text-data__specification">
+                                Groundbreaking defence and aerospace systems
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="callback callback--bottom callback--none">
+                    <button class="callback__button callback__button--bottom">
+                        <p class="callback__text">All Projects</p>
+                        <span class="callback__icon">
+                            <picture class="callback__picture">
+                                <source
+                                    class="callback__img"
+                                    srcset="
+                                        src/images/inhtml/icons/arrow-right.svg
+                                    "
+                                    media="(min-width:1024px)"
+                                />
+                                <img
+                                    class="callback__img"
+                                    src="src/images/inhtml/icons/arrow-right-mini.svg"
+                                    alt=""
+                                />
+                            </picture>
+                        </span>
+                    </button>
+                </div>
+            </section>
+            <section class="our-team" id="our-team">
+                <a
+                    class="infoblock infoblock--our-team"
+                    href="javascript:void(0)"
+                >
+                    <picture class="back-image back-image--big">
+                        <source
+                            class="back-image__picture"
+                            srcset="src/images/inhtml/img-team-home@big2x.jpg"
+                            media="(min-width:1024px)"
+                        />
+                        <img
+                            class="back-image__picture"
+                            src="src/images/inhtml/img-team-home@3x.jpg"
+                            alt=""
+                        />
+                    </picture>
+                    <div
+                        class="text-data text-data--absolute text-data--our-team"
+                    >
+                        <div
+                            class="text-data__wrapper text-data__wrapper--our-team"
+                        >
+                            <p class="text-data__headline">OUR TEAM</p>
+                            <p class="text-data__specification">
+                                We are united by our passion to create unique
+                                and efficient digital products
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <div class="text-data text-data--our">
+                    <div
+                        class="text-data__wrapper text-data__wrapper--frontbyte"
+                    >
+                        <p
+                            class="text-data__headline text-data__headline--our-team"
+                        >
+                            Inside Frontbyte
+                        </p>
+                        <p class="text-data__specification">
+                            We change the way businesses and industries operate.
+                        </p>
+                    </div>
+                </div>
+                <a
+                    class="infoblock infoblock--our-team"
+                    href="javascript:void(0)"
+                >
+                    <picture
+                        class="back-image back-image--big back-image--press"
+                    >
+                        <source
+                            class="back-image__picture back-image__picture--right"
+                            srcset="
+                                src/images/inhtml/img-inside-press@big2x.jpg
+                            "
+                            media="(min-width:1024px)"
+                        />
+                        <img
+                            class="back-image__picture back-image__picture--right"
+                            src="src/images/inhtml/img-inside-press@3x.jpg"
+                            alt=""
+                        />
+                    </picture>
+                    <div class="text-data text-data--absolute text-data--press">
+                        <div
+                            class="text-data__wrapper text-data__wrapper--press"
+                        >
+                            <p class="text-data__headline">PRESS ABOUT US</p>
+                            <p
+                                class="text-data__specification text-data__specification--press"
+                            >
+                                AR golf platform BirdieEyes raises $300 million
+                                at $2.7 billion valuation
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider__wrapper">
+                            <button
+                                class="slider__arrow slider__arrow--disabled"
+                                disabled
+                            >
+                                <img
+                                    src="src/images/inhtml/icons/small-arrow-left.svg"
+                                    alt=""
+                                />
+                            </button>
+                            <div class="slider__back slider__back--active">
+                                <img
+                                    src="src/images/inhtml/icons/vector-tc.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="slider__back"></div>
+                            <div class="slider__back"></div>
+                            <div class="slider__back"></div>
+                            <div class="slider__back"></div>
+
+                            <button class="slider__arrow">
+                                <img
+                                    src="src/images/inhtml/icons/small-arrow-right.svg"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <div class="text-data text-data--news-title">
+                    <p class="text-data__headline text-data__headline--news">
+                        LATEST NEWS
+                    </p>
+                </div>
+                <div class="news">
+                    <div class="text-data text-data--news">
+                        <div
+                            class="text-data__wrapper text-data__wrapper--news"
+                        >
+                            <a
+                                class="text-data__specification text-data__specification--news"
+                            >
+                                How to use email marketing to connect with your
+                                users
+                            </a>
+                            <p class="text-data__date">Dec 19, 2018</p>
+                        </div>
+                    </div>
+                    <div class="text-data text-data--news">
+                        <div
+                            class="text-data__wrapper text-data__wrapper--news"
+                        >
+                            <a
+                                class="text-data__specification text-data__specification--news"
+                            >
+                                How to use email marketing to connect with your
+                                users
+                            </a>
+                            <p class="text-data__date">Dec 19, 2018</p>
+                        </div>
+                    </div>
+                    <div class="text-data text-data--news text-data--last">
+                        <div
+                            class="text-data__wrapper text-data__wrapper--news"
+                        >
+                            <a
+                                class="text-data__specification text-data__specification--news"
+                            >
+                                How to use email marketing to connect with your
+                                users
+                            </a>
+                            <p class="text-data__date">Dec 19, 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="contacts">
+                    <div class="contacts__about">
+                        <p class="contacts__title">Contacts</p>
+                        <p class="contacts__description">
+                            Our head office is located in Norway. Research and
+                            development center is located in Belarus.
+                        </p>
+                    </div>
+                    <ul class="contacts__social">
+                        <li class="contacts__icon">
+                            <a href="javascript:void(0)" class="contacts__link"
+                                ><img
+                                    src="src/images/inhtml/icons/icon-linkedin-white.svg"
+                                    alt=""
+                            /></a>
+                        </li>
+                        <li class="contacts__icon">
+                            <a href="javascript:void(0)" class="contacts__link"
+                                ><img
+                                    src="src/images/inhtml/icons/icon-facebook-white.svg"
+                                    alt=""
+                            /></a>
+                        </li>
+                        <li class="contacts__icon">
+                            <a href="javascript:void(0)" class="contacts__link"
+                                ><img
+                                    src="src/images/inhtml/icons/icon-instagram-white.svg"
+                                    alt=""
+                            /></a>
+                        </li>
+                    </ul>
+
+                    <div class="address">
+                        <p class="address__name">Norway</p>
+                        <p class="address__street">Kristiansand</p>
+                        <p class="address__street">
+                            Vestre strandgate, 23, 4th and
+                            <nobr> 6th floor N-4611</nobr>
+                        </p>
+
+                        <a
+                            class="address__email"
+                            href="mailto:mail@htmlacademy.ru"
+                        >
+                            contact@frontbyte.no
+                        </a>
+                        <a class="address__tel" href="tel: +47 416 36 983"
+                            >+47 416 36 983</a
+                        >
+                    </div>
+                    <div class="address">
+                        <p class="address__name">Belarus</p>
+                        <p class="address__street">Minsk</p>
+                        <p class="address__street">
+                            Dombrovskaya str., 9, оffice 10.2.2
+                        </p>
+
+                        <a
+                            class="address__email"
+                            href="mailto:contact@frontbyte.by"
+                        >
+                            contact@frontbyte.by
+                        </a>
+                        <a class="address__tel" href="tel: +375 29 1393336"
+                            >+375 29 1393336</a
+                        >
+                    </div>
+                </div>
+                <div class="footer__extra">
+                    <div class="callback callback--bottom">
+                        <button
+                            class="callback__button callback__button--bottom"
+                        >
+                            <p class="callback__text">Drop us a line</p>
+                            <span class="callback__icon callback__icon--bottom">
+                                <picture class="callback__picture">
+                                    <source
+                                        class="callback__img"
+                                        srcset="
+                                            src/images/inhtml/icons/arrow-right.svg
+                                        "
+                                        media="(min-width:1024px)"
+                                    />
+                                    <img
+                                        class="callback__img"
+                                        src="src/images/inhtml/icons/arrow-right-mini.svg"
+                                        alt=""
+                                    />
+                                </picture>
+                            </span>
+                        </button>
+                    </div>
+                    <ul class="menu menu--footer">
+                        <li class="menu__item menu__item--footer">
+                            <a class="menu__link" href="#about">About</a>
+                        </li>
+                        <li class="menu__item menu__item--footer">
+                            <a class="menu__link" href="#portfolio">Projects</a>
+                        </li>
+                        <li class="menu__item menu__item--footer">
+                            <a class="menu__link" href="javascript:void(0)"
+                                >Services</a
+                            >
+                        </li>
+                        <li class="menu__item menu__item--footer">
+                            <a class="menu__link" href="#our-team">Our team</a>
+                        </li>
+                        <li class="menu__item menu__item--footer">
+                            <a class="menu__link" href="javascript:void(0)"
+                                >Events</a
+                            >
+                        </li>
+                        <li class="menu__item menu__item--footer">
+                            <a class="menu__link" href="#footer">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="copyright">
+                        <p class="copyright__text">© 2008–2018 Frontbyte</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

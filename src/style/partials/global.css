@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.5s;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.main {
+    background-color: var(--white);
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    line-height: 0;
+}
+a:hover {
+    color: var(--dark);
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+button:hover {
+    background-color: var(--dark);
+    opacity: 0.5;
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: var(--white);
+    }
+
+    body {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}

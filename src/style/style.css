@@ -1,0 +1,10 @@
+@import url(partials/fonts.css);
+@import url(partials/global.css);
+@import url(partials/var.css);
+@import url(partials/header.css);
+@import url(bem-blocks/bem.css);
+@import url(partials/headline.css);
+@import url(partials/about.css);
+@import url(partials/potfolio.css);
+@import url(partials/our-team.css);
+@import url(partials/footer.css);

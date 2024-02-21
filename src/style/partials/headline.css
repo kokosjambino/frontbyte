@@ -1,0 +1,96 @@
+.headline {
+    background-color: var(--dark);
+    color: var(--white);
+    padding-top: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    padding-bottom: 30px;
+}
+
+.title--headline {
+    line-height: 1.2;
+    letter-spacing: -0.31px;
+}
+
+.description--headline {
+    line-height: 1.33;
+    letter-spacing: normal;
+    margin-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+    .headline {
+        background-image: url("../../images/inhtml/img-header.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: var(--white);
+        position: relative;
+        z-index: 1;
+        padding-top: 170px;
+        padding-bottom: 0;
+    }
+    .headline__wrapper::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        opacity: 0.6;
+        background-color: black;
+    }
+
+    .title--headline {
+        line-height: 1.08;
+        letter-spacing: -0.75px;
+    }
+
+    .description--headline {
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .headline {
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 1180px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .headline {
+        background-image: none;
+        padding-top: 0;
+        background-color: var(--white);
+        left: 0;
+        transform: translateX(0);
+        max-width: none;
+    }
+    .headline__wrapper {
+        padding-top: 170px;
+        background-image: url(../../images/inhtml/img-header.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .headline__wrapper::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        opacity: 0.6;
+        background-color: black;
+    }
+
+    .title--headline {
+        position: relative;
+        z-index: 2;
+    }
+
+    .description--headline {
+        position: relative;
+        z-index: 2;
+    }
+}
